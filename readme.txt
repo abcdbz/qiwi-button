@@ -17,11 +17,18 @@ Adds a qiwi payment button (Russian payment system) in the entry, according to a
 
 Adds a qiwi payment button (Russian payment system) in the entry, according to a shortcode.
 
+Shortcode - [qiwibtn]
+Atributes:
+* title - Title of the button. eg: title="Buy Now"
+* descr - Description of the product. eg: descr="Push the button"
+* rub - Price of the product. eg: rub="1000"
+
 For more information, please visit http://polzo.ru/qiwi-button
 
 == Installation ==
-* Upload the plugin folder to your blog
+* Upload the plugin folder to your blog.
 * Activate it.
+* Add shortcode.
 
 == Changelog ==
 
