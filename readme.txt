@@ -1,21 +1,17 @@
 ﻿=== QIWI Button ===
 Contributors: akurganow
-
+Author: akurganow
 Donate link: https://money.yandex.ru/quickpay/confirm.xml?receiver=41001690896603&FormComment=ogMetaPlugin&targets=donate&writable-sum=true&sum=100
-
 Tags: payment button, buy button, qiwi
-
 Requires at least: 3.0
-
-Tested up to: 3.3.1
-
-Stable tag: 0.2
+Tested up to: 3.3.2
+Stable tag: trunk
 
 Insert QIWI buy button in your post
 
 == Description ==
 
-Добавьте платежную кнопку QIWI на ваш сайт, используя простой шорткод.
+Добавьте платежную кнопку QIWI в ваши посты, используя простой шорткод.
 
 Shortcode - [qiwibtn]
 Atributes:
