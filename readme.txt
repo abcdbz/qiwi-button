@@ -9,34 +9,52 @@ Requires at least: 3.0
 
 Tested up to: 3.3.1
 
-Stable tag: 0.1
+Stable tag: 0.2
 
-Adds a qiwi payment button (Russian payment system) in the entry, according to a shortcode.
+Добавьте платежную кнопку QIWI на ваш сайт, используя простой шорткод.
 
 == Description ==
 
-Adds a qiwi payment button (Russian payment system) in the entry, according to a shortcode.
+Добавьте платежную кнопку QIWI на ваш сайт, используя простой шорткод.
 
 Shortcode - [qiwibtn]
 Atributes:
-* title - Title of the button. eg: title="Buy Now"
-* descr - Description of the product. eg: descr="Push the button"
-* rub - Price of the product. eg: rub="1000"
+* title - Надпись на кнопке, например: title="Купить"
+* descr - Описание рядом с кнопкой, по умолчание пусто, например: descr="Нажми на кнопку"
+* rub - Цена на кнопке, например: rub="1000"
 
-For more information, please visit http://polzo.ru/qiwi-button
+
+* Для большей информации или чтобы оставить отзыв, посетите <a href="http://polzo.ru/qiwi-button" target="_blank">Страницу плагина</a>
+
+
+* P.S.: Спасибо всем кто донейтит, только благодаря вам кнопка улучшается.
+* P.P.S.: В связи с отсутствием свободного времени, хочу попросить у сообщества помощи в поддержке плагина, если хотите помочь, напишите мне на <a href="mailto:akurganow@polzo.ru?subject=Помогу%20с%20кнопкой%20QIWI">e-mail</a>.
+
 
 == Installation ==
-* Upload the plugin folder to your blog.
-* Activate it.
-* Add shortcode.
+* Загрузите плагин в папку "wp-content/plugins" вашего сайта по FTP или используя встроенный загрузчик.
+* Активируйте плагин.
+* Добавте шорткод.
 
 == Changelog ==
 
+= 0.2 =
+
+* Исправлены ошибки с путями к файлам.
+* Подключены библиотеки с <a href="http://api.yandex.ru/jslibs/libs.xml" target="_blank">Яндекс.API</a>
+
 = 0.1 =
 
-* Initial Plugin
+* Релиз плагина
 
 == Upgrade Notice ==
 
-= 0.1 =Initial Plugin
+= 0.2 =
+
+* Исправлены ошибки с путями к файлам.
+* Подключены библиотеки с <a href="http://api.yandex.ru/jslibs/libs.xml" target="_blank">Яндекс.API</a>
+
+= 0.1 =
+
+* Релиз плагина
 
