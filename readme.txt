@@ -11,7 +11,7 @@ Tested up to: 3.3.1
 
 Stable tag: 0.2
 
-Добавьте платежную кнопку QIWI на ваш сайт, используя простой шорткод.
+Insert QIWI buy button in your post
 
 == Description ==
 
