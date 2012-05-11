@@ -1,14 +1,14 @@
 <?php
 /**
  * @package QiwiButton
- * @version 0.1
+ * @version 0.2
  */
  /*
 Plugin Name: QIWI Button
 Plagin URI: http://polzo.ru
 Description: Insert QIWI buy button in your post
 Author: Alexander Kurganov
-Version: 0.1
+Version: 0.2
 Author URI: http://polzo.ru
 */
 
@@ -119,8 +119,8 @@ function qiwibutton_frame_script() {
 }
 function qiwibutton_shortcode($atts) {
 	
-	$img_url= WP_PLUGIN_URL . "/qiwibutton/images";
-	$dir= WP_PLUGIN_URL . "/qiwibutton";
+	$img_url= WP_PLUGIN_URL . "/qiwi-button/images";
+	$dir= WP_PLUGIN_URL . "/qiwi-button";
 	$check_agt_option=get_option('qiwibutton_check_agt');
 	$com=single_post_title('',false);
 	$blog_url=get_bloginfo('url');
@@ -135,7 +135,7 @@ function qiwibutton_shortcode($atts) {
      "rub" => '1000',
 	 "kop" => '00',
 	 "title" => 'Купить',
-	 "descr" => 'Описание'
+	 "descr" => '&nbsp;'
      ), $atts));
 	 
 	return '
@@ -157,8 +157,8 @@ function qiwibutton_shortcode($atts) {
 
 function qiwibutton_reg_css() {
 	
-	wp_register_style( 'fancybox', WP_PLUGIN_URL . '/qiwibutton/fancybox/jquery.fancybox-1.3.4.css' );
-	wp_register_style( 'qiwibutton', WP_PLUGIN_URL . '/qiwibutton/btnstyle.css' );
+	wp_register_style( 'fancybox', WP_PLUGIN_URL . '/qiwi-button/fancybox/jquery.fancybox-1.3.4.css' );
+	wp_register_style( 'qiwibutton', WP_PLUGIN_URL . '/qiwi-button/btnstyle.css' );
 	
 	wp_enqueue_style( 'fancybox' );
 	wp_enqueue_style( 'qiwibutton' );
@@ -171,13 +171,13 @@ function qiwibutton_reg_js() {
 	} 
 	else {
 	wp_deregister_script('jquery');  
-	wp_register_script('jquery',("http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"), false);
+	wp_register_script('jquery',"http://yandex.st/jquery/1.7.2/jquery.min.js", false);
 	
 	wp_deregister_script('fancybox');
-	wp_register_script('fancybox', WP_PLUGIN_URL . '/qiwibutton/js/jquery.fancybox-1.3.4.pack.js', 'jquery');
+	wp_register_script('fancybox', "http://yandex.st/jquery/fancybox/1.3.4/jquery.fancybox.min.js", 'jquery');
 	
 	wp_deregister_script('easing');
-	wp_register_script('easing', WP_PLUGIN_URL . '/qiwibutton/js/jquery.easing-1.3.pack.js', 'jquery');
+	wp_register_script('easing', "http://yandex.st/jquery/easing/1.3/jquery.easing.min.js", 'jquery');
 	
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('fancybox');

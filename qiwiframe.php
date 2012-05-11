@@ -3,7 +3,7 @@
 <head>
 <title></title>
 <link rel="stylesheet" href="qiwiframestyle.css" />
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js?ver=3.3.1"></script>
+<script type="text/javascript" src="http://yandex.st/jquery/1.7.2/jquery.min.js"></script>
 <script>
 $(document).ready(function() {
 			
