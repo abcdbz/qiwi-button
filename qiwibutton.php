@@ -1,14 +1,14 @@
 <?php
 /**
  * @package QiwiButton
- * @version 0.2
+ * @version 0.3
  */
  /*
 Plugin Name: QIWI Button
 Plagin URI: http://polzo.ru
 Description: Insert QIWI buy button in your post
 Author: Alexander Kurganov
-Version: 0.2
+Version: 0.3
 Author URI: http://polzo.ru
 */
 
@@ -108,7 +108,7 @@ function qiwibutton_frame_script() {
 	echo "<script type='text/javascript'>
 		$(document).ready(function() {
 			
-			$('#qiwiframe_link').fancybox({
+			$('.qiwiframe_link').fancybox({
 				'width'    : 560,
 				'height'   : 560,
 				'scrolling': 'no',
@@ -135,7 +135,7 @@ function qiwibutton_shortcode($atts) {
      "rub" => '1000',
 	 "kop" => '00',
 	 "title" => 'Купить',
-	 "descr" => '&nbsp;'
+	 "descr" => 'Описание'
      ), $atts));
 	 
 	return '
@@ -145,7 +145,7 @@ function qiwibutton_shortcode($atts) {
 	<p>'.$descr.'</p>
 	</td>
 	<td class="qiwibtn_container">
-		<a id="qiwiframe_link" class="qiwibtn" href="'.$dir.'/qiwiframe.php?from='.get_option('qiwibutton_shop_id').'&summ='.$rub.'.'.$kop.'&com='.get_option('qiwibutton_comment').'&lifetime='.get_option('qiwibutton_lifetime').'&check_agt='.$check_agt.'&iframe=true&url='.$blog_url.'">
+		<a id="qiwiframe_link" class="qiwibtn qiwiframe_link" href="'.$dir.'/qiwiframe.php?from='.get_option('qiwibutton_shop_id').'&summ='.$rub.'.'.$kop.'&com='.get_option('qiwibutton_comment').'&lifetime='.get_option('qiwibutton_lifetime').'&check_agt='.$check_agt.'&iframe=true&url='.$blog_url.'">
 			<span class="qiwibtn_icon"><span></span></span>
 			<span class="qiwibtn_hidden">'.$rub.' р.</span>
 			<span class="qiwibtn_text">'.$title.'</span>

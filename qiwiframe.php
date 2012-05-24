@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="ru-RU">
 <head>
+<meta charset="UTF-8">
 <title></title>
 <link rel="stylesheet" href="qiwiframestyle.css" />
 <script type="text/javascript" src="http://yandex.st/jquery/1.7.2/jquery.min.js"></script>

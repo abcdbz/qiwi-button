@@ -1,7 +1,7 @@
 ﻿=== QIWI Button ===
 Contributors: akurganow
 Author: akurganow
-Donate link: https://money.yandex.ru/quickpay/confirm.xml?receiver=41001690896603&FormComment=ogMetaPlugin&targets=donate&writable-sum=true&sum=100
+Donate link: https://money.yandex.ru/quickpay/confirm.xml?receiver=41001690896603&FormComment=QIWIBtnPlugin&targets=donate&writable-sum=true&sum=100
 Tags: payment button, buy button, qiwi
 Requires at least: 3.0
 Tested up to: 3.3.2
@@ -28,15 +28,21 @@ Atributes:
 
 
 == Installation ==
+
 * Загрузите плагин в папку "wp-content/plugins" вашего сайта по FTP или используя встроенный загрузчик.
 * Активируйте плагин.
 * Добавте шорткод.
 
 == Changelog ==
 
+= 0.3 =
+
+* Исправлена проблема с несколькими кнопками на одной странице (За обнаруженный баг спасибо <a href="drzulus.ru" title="Dr.ZuLuS">Dr.ZuLuS</a>)
+* Исправлена проблема с кодировкой в iframe
+
 = 0.2 =
 
-* Исправлены ошибки с путями к файлам.
+* Исправлены ошибки с путями к файлам. (За обнаруженный баг спасибо ZetRider)
 * Подключены библиотеки с <a href="http://api.yandex.ru/jslibs/libs.xml" target="_blank">Яндекс.API</a>
 
 = 0.1 =
