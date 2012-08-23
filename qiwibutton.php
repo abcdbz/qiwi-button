@@ -1,7 +1,7 @@
 <?php
 /**
  * @package QiwiButton
- * @version 0.3
+ * @version 0.4
  */
  /*
 Plugin Name: QIWI Button
@@ -171,7 +171,7 @@ function qiwibutton_reg_js() {
 	} 
 	else {
 	wp_deregister_script('jquery');  
-	wp_register_script('jquery',"http://yandex.st/jquery/1.7.2/jquery.min.js", false);
+	wp_register_script('jquery',"http://yandex.st/jquery/1.8.0/jquery.min.js", false);
 	
 	wp_deregister_script('fancybox');
 	wp_register_script('fancybox', "http://yandex.st/jquery/fancybox/1.3.4/jquery.fancybox.min.js", 'jquery');
