@@ -8,7 +8,7 @@ Plugin Name: QIWI Button
 Plagin URI: http://polzo.ru
 Description: Insert QIWI buy button in your post
 Author: Alexander Kurganov
-Version: 0.3
+Version: 0.4
 Author URI: http://polzo.ru
 */
 
