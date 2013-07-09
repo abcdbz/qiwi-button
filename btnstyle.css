@@ -20,7 +20,6 @@
 	padding:0;
 	float:right;
 	width: 330px;
-	overflow: hidden;
 	height:100%;
 }
 .qiwibtn {
@@ -127,4 +126,5 @@
 }
 .qiwibtn:active .qiwibtn_icon span {	
 	background:transparent url(images/qiwi_logo_white.png) no-repeat;
+	background-size: cover;
 }
