@@ -1,15 +1,15 @@
 <?php
 /**
  * @package QiwiButton
- * @version 0.5
+ * @version 0.5.1
  */
  /*
 Plugin Name: QIWI Button
-Plagin URI: http://polzo.ru
+Plagin URI: http://polzo.ru/qiwi-button
 Description: Insert QIWI buy button in your post
 Author: Alexander Kurganov
-Version: 0.4
-Author URI: http://polzo.ru
+Version: 0.5.1
+Author URI: http://akurganow.ru
 */
 
 if (!defined("WP_CONTENT_URL")) define("WP_CONTENT_URL", get_option("siteurl") . "/wp-content");

@@ -4,7 +4,7 @@ Author: akurganow
 Donate link: https://money.yandex.ru/quickpay/confirm.xml?receiver=41001690896603&FormComment=QIWIBtnPlugin&targets=donate&writable-sum=true&sum=100
 Tags: payment button, buy button, qiwi
 Requires at least: 3.0
-Tested up to: 3.3.2
+Tested up to: 3.5.2
 Stable tag: trunk
 
 Добавляет кнопку QIWI в пост или в любое другое место на странице, которое поддерживает шорткоды
