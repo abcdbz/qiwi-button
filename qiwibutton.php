@@ -1,14 +1,14 @@
 <?php
 /**
  * @package QiwiButton
- * @version 0.5.1
+ * @version 0.5.2
  */
  /*
 Plugin Name: QIWI Button
 Plagin URI: http://polzo.ru/qiwi-button
 Description: Insert QIWI buy button in your post
 Author: Alexander Kurganov
-Version: 0.5.1
+Version: 0.5.2
 Author URI: http://akurganow.ru
 */
 
@@ -28,7 +28,7 @@ function qiwibutton_option_page()
 	//Значения по умолчанию для настроек магазина
 	add_option('qiwibutton_shop_id', 'Не задано');
 	add_option('qiwibutton_lifetime', '24');
-	add_option('qiwibutton_check_agt', 'checked');
+	add_option('qiwibutton_check_agt', true);
 	add_option('qiwibutton_comment', 'Оплата на сайте '.$com_url.'');
 	
 	//Изменение данных магазина
@@ -91,7 +91,7 @@ function qiwibutton_change_shop()
 				<th scope='row'>Только зарегистрированным:</th>
 				<td>					
 					<label for='qiwibutton_check_agt'>
-					<input type='checkbox' name='qiwibutton_check_agt' checked='".get_option('qiwibutton_check_agt')."'/>
+					<input type='checkbox' name='qiwibutton_check_agt' ";if(get_option('qiwibutton_check_agt'))echo"checked";echo "/>
 					Проверять, зарегистрирован ли пользователь в «QIWI Кошельке»					
 					</label>
 				</td>
