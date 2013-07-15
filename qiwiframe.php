@@ -28,7 +28,6 @@ $("#form").submit(function() {
 <div class="content">
 <div class="phone">
 <form name="phone_form" id="form" method="post" action="https://w.qiwi.ru/setInetBill_utf.do" target="QIWIiframe">
- 
 	<div>
 	<table class="billing_info">
 	<tr>
@@ -42,39 +41,34 @@ $("#form").submit(function() {
 	<tr>
 		<td><p id="phone_example">Пример: 9211234567</p></td>
 		<td>&nbsp;</td>
-<?php
-	$url= $_GET['url'];
-	$from = $_GET['from'];
-	$summ = $_GET['summ'];
-	$com = $_GET['com'];
-	$lifetime = $_GET['lifetime'];
-	$check_agt = $_GET['check_agt'];
-	$iframe = $_GET['iframe'];
-	
-	echo '
-	</tr>
-	<tr class="hiden">
-		<td><input name="from" value="'.$from.'"></td>
-		<td><input name="summ" value="'.$summ.'"></td>
-	</tr>
-	<tr class="hiden">
-		<td>&nbsp;</td>
-		<td><input name="lifetime" value="'.$lifetime.'"></td>
-	</tr>
-	<tr class="hiden">
-		<td><input name="check_agt" value="'.$check_agt.'"></td>
-		<td><input name="iframe" value="'.$iframe.'"></td>
+		</tr>
+	<tr class="hidden">
+		<td>
+		<?php
+			$url= $_GET['url'];
+			$from = $_GET['from'];
+			$summ = $_GET['summ'];
+			$com = $_GET['com'];
+			$lifetime = $_GET['lifetime'];
+			$check_agt = $_GET['check_agt'];
+			$iframe = $_GET['iframe'];
+		?>
+			<input name="from" value="<?php echo $from; ?>">
+			<input name="summ" value="<?php echo $summ; ?>">
+			<input name="lifetime" value="<?php echo $lifetime; ?>">
+			<input name="check_agt" value="<?php echo $check_agt; ?>">
+			<input name="iframe" value="<?php echo $iframe; ?>">
+		</td>
 	</tr>
 	</table>
 	</div>
 	<div class="comment">
-	<textarea name="com" cols="38" rows="4" placeholder="Комментарий" required>'.$com.'</textarea>
+	<textarea name="com" cols="38" rows="4" placeholder="Комментарий" required><?php echo $com ?></textarea>
 	</div>
 </form>
 <p class="description_payment">
 	Введите свой номер телефона  форму ввыше.<br /><b>Будьте внимательны может взиматься коммисия.</b>
-</p>'
-?>
+</p>
 </div>
 </div>
 </div>
