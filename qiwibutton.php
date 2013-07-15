@@ -1,7 +1,7 @@
 <?php
 /**
  * @package QiwiButton
- * @version 0.5.2
+ * @version 0.5.3
  */
  /*
 Plugin Name: QIWI Button
@@ -109,9 +109,8 @@ function qiwibutton_frame_script() {
 		$(document).ready(function() {
 			
 			$('.qiwiframe_link').fancybox({
-				autoSize : false,
 				width    : 560,
-				height   : 390,
+				minHeight   : 570,
 				scrolling: 'no',
 				type	 : 'iframe',
 				iframe   : {scrolling:'no'},
@@ -126,7 +125,7 @@ function qiwibutton_shortcode($atts) {
 	$check_agt_option=get_option('qiwibutton_check_agt');
 	$com=single_post_title('',false);
 	$blog_url=get_bloginfo('url');
-	if ($check_agt_option = 'checked') {
+	if ($check_agt_option) {
 		$check_agt='true'; 
 	}
 	else {
