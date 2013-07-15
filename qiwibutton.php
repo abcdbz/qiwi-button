@@ -1,7 +1,7 @@
 <?php
 /**
  * @package QiwiButton
- * @version 0.4.3
+ * @version 0.5
  */
  /*
 Plugin Name: QIWI Button
@@ -109,10 +109,12 @@ function qiwibutton_frame_script() {
 		$(document).ready(function() {
 			
 			$('.qiwiframe_link').fancybox({
-				'width'    : 560,
-				'height'   : 560,
-				'scrolling': 'no',
-				'type'	   : 'iframe'
+				autoSize : false,
+				width    : 560,
+				height   : 390,
+				scrolling: 'no',
+				type	 : 'iframe',
+				iframe   : {scrolling:'no'},
 			});
 		});
 	</script>";
@@ -128,7 +130,7 @@ function qiwibutton_shortcode($atts) {
 		$check_agt='true'; 
 	}
 	else {
-		$check_agt='falce'; 
+		$check_agt='false'; 
 	}
 	
 	extract(shortcode_atts(array(
@@ -156,30 +158,23 @@ function qiwibutton_shortcode($atts) {
 }
 
 function qiwibutton_reg_css() {
-	
-	wp_register_style( 'fancybox', WP_PLUGIN_URL . '/qiwi-button/fancybox/jquery.fancybox-1.3.4.css' );
+	wp_register_style( 'fancybox', WP_PLUGIN_URL . '/qiwi-button/fancybox/jquery.fancybox.css' );
 	wp_register_style( 'qiwibutton', WP_PLUGIN_URL . '/qiwi-button/btnstyle.css' );
 	
 	wp_enqueue_style( 'fancybox' );
 	wp_enqueue_style( 'qiwibutton' );
 }
 
-
-
 function qiwibutton_reg_js() {
     if (is_admin()) {
 	} 
-	else {
-	wp_deregister_script('jquery');  
-	wp_register_script('jquery',"http://yandex.st/jquery/1.8.0/jquery.min.js", false);
-	
+	else {	
 	wp_deregister_script('fancybox');
-	wp_register_script('fancybox', "http://yandex.st/jquery/fancybox/1.3.4/jquery.fancybox.min.js", 'jquery');
+	wp_register_script('fancybox', WP_PLUGIN_URL . '/qiwi-button/fancybox/jquery.fancybox.pack.js', 'jquery');
 	
 	wp_deregister_script('easing');
 	wp_register_script('easing', "http://yandex.st/jquery/easing/1.3/jquery.easing.min.js", 'jquery');
 	
-	wp_enqueue_script('jquery');
 	wp_enqueue_script('fancybox');
 	wp_enqueue_script('easing');
 	}

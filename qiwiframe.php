@@ -43,7 +43,6 @@ $("#form").submit(function() {
 		<td><p id="phone_example">Пример: 9211234567</p></td>
 		<td>&nbsp;</td>
 <?php
-	
 	$url= $_GET['url'];
 	$from = $_GET['from'];
 	$summ = $_GET['summ'];
